@@ -1,0 +1,111 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background-color: #2a2a2e;
+}
+h1{
+    margin-bottom: 20px;
+}
+
+header{
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.header-text{
+    display:flex;
+    flex-direction: column;
+}
+.header-text h3{
+    margin:0;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.header-text h4{
+    margin:0;
+    font-weight: 300;
+}
+.header-text a{
+    text-decoration: none;
+    color:inherit;
+}
+.header-text a:nth-of-type(2){
+    text-decoration: none;
+    color:rgb(150,150,150);
+}
+#lyricbox {
+    margin:20px auto;
+    background-color: #657F3B; /* Set your desired background color */
+    padding: 20px;
+    border-radius: 20px;
+    font-size:30px;
+    font-weight: 800;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    width: 50%; /* Adjust width as needed */
+    display: block; /* Add this line */
+    text-align: left; /* Add this line */
+}
+#lyricbox section{
+    font-weight:600;
+    font-size: 30px;
+}
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+#lyricbox section p:hover{
+    transition: 0.3s ease-in-out;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.album-cover {
+    position: relative;
+}
+
+.album-cover::before{
+    cursor: pointer;
+    content:"";
+    background-image:url("play-icon-final.png");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: opacity 0.5s;
+}
+.album-cover:hover::before{
+    opacity: 0.5;
+}
+.current-line {
+    color: white;
+}
+.emphasized{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 38px;
+}
+.disguise{
+    font-family:"Monoton", sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    font-style: normal;
+}
